@@ -1,0 +1,31 @@
+<div class="img-viewer-wrapper-parent" > 
+ <div class="img-viewer-wrapper">
+  <div class="img-viewer">
+	<div class="img-view-area">
+		<div class="left-btn-view" ng-click="pushLeft()"><div><div><div class="nav-arrow"></div></div></div></div>
+		<div class="img-carousel-item {{image.animNext}} {{image.animPrev}} {{image.animRightPrev}} {{image.animRightNext}}" style="left: {{image.position}}%;" ng-repeat="image in images"><img  ng-src="{{image.src}}" ></div>
+		<div class="right-btn-view" ng-click="pushRight(image)"><div><div><div class="nav-arrow"></div></div></div></div>
+	</div>
+	<div class="images-nav-panel">
+		
+		<div class="left-side-img1" ng-click="chooseImage(defineCurrentImg('firstLeftImg',images).index)">
+		  <img ng-src="{{defineCurrentImg('firstLeftImg',images).src}}">
+		</div>
+		<div class="left-side-img2" ng-click="chooseImage(defineCurrentImg('secondLeftImg',images).index)">
+		  <img ng-src="{{defineCurrentImg('secondLeftImg',images).src}}">
+		</div>
+		<div class="center-img" ng-click="chooseImage(defineCurrentImg('centralImg',images).index)">
+		  <img ng-src="{{defineCurrentImg('centralImg',images).src}}">
+		</div>
+		<div class="right-side-img1" ng-click="chooseImage(defineCurrentImg('secondRightImg',images).index)">
+		  <img ng-src="{{defineCurrentImg('secondRightImg',images).src}}">
+		</div>
+		<div class="right-side-img2" ng-click="chooseImage(defineCurrentImg('firstRightImg',images).index)">
+		  <img ng-src="{{defineCurrentImg('firstRightImg',images).src}}">
+		</div>
+
+	</div>
+  </div>
+  <div class="back-area" ng-click="closePopUp()"></div>
+ </div>
+</div>

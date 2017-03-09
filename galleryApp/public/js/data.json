@@ -1,0 +1,11 @@
+{
+	"images":[{"src":"public/imgs/one.jpg","active":false},{"src":"public/imgs/two.jpg","active":false},
+	 {"src":"public/imgs/three.jpg","active":false},{"src":"public/imgs/four.jpg","active":false},
+	 {"src":"public/imgs/five.jpg","active":false},{"src":"public/imgs/six.jpg","active":false},
+	 {"src":"public/imgs/seven.jpg","active":false},{"src":"public/imgs/eight.jpg","active":false},
+	 {"src":"public/imgs/nine.jpg","active":false},{"src":"public/imgs/ten.jpg","active":false},
+	 {"src":"public/imgs/eleven.jpg","active":false},{"src":"public/imgs/twelve.jpg","active":false},
+	 {"src":"public/imgs/thirteen.jpg","active":false},{"src":"public/imgs/fourteen.jpg","active":false},
+     {"src":"public/imgs/fifteen.jpg","active":false}, {"src":"public/imgs/sixteen.png","active":false},
+     {"src":"public/imgs/seventeen.jpg","active":false},{"src":"public/imgs/eighteen.jpg","active":false}]
+}

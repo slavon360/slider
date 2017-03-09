@@ -1,0 +1,9 @@
+<div class="gallery row">
+    <section class="wrapper-downl-process" ng-if="!images">
+    	<div class="download-process"><i class="fa fa-refresh" style="font-size:36px;"></i></div>
+    </section>
+    <div class="item-image col-xs-6 col-sm-4 col-md-3" ng-repeat="image in images">
+    	<div class="child-item-image" ng-click="chooseImage($index)"><img ng-src="{{image.src}}"></div>
+    </div>
+    <section ng-if="pageState.imageClicked" class="main-viewer-parent" img-viewer></section>
+</div>
